@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Service temporarily unavailable. We'll be back soon.">
+    <title>Service Unavailable | SoundCU</title>
+    <style>
+        /* Reset default styles for consistency */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .content {
+            text-align: center;
+            padding: 30px 40px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 90%;
+            transition: transform 0.3s ease;
+        }
+
+        .content:hover {
+            transform: translateY(-5px);
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 600;
+            color: #1a2a44;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .button:active {
+            transform: scale(0.98);
+        }
+
+        .line {
+            width: 60px;
+            height: 3px;
+            background-color: #007bff;
+            border: none;
+            margin: 20px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .content {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+    <script>
+        // Redirect to home after 5 seconds
+        setTimeout(function() {
+            window.location.href = 'https://www.trueccu.com/';
+        }, 5000);
+
+        // Redirect to home after 1 second when button is clicked
+        function redirectToHome() {
+            setTimeout(function() {
+                window.location.href = 'https://www.trueccu.com/';
+            }, 1000);
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <h1>We'll Be Back Soon</h1>
+        <p>This service is temporarily unavailable.</p>
+        <p>Please check back in a few minutes.</p>
+        <button class="button" onclick="redirectToHome()">Return to Home</button>
+        <hr class="line">
+    </div>
+</body>
+</html>
